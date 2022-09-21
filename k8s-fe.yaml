@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: project1
+  name: projectdp
+  namespace: sprint
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: project
+  template:
+    metadata:
+      labels:
+        app: project
+    spec:
+      containers:
+      - image: ckshravani/project:frontendv1.0
+        name: frontendkb
+        ports:
+        - containerPort: 8090
+        env:
+          - name: servername
+            value: 'projects1'
+          - name: username
+            value: 'postgres'
+          - name: password
+            value: '1234'
