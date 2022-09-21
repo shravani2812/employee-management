@@ -5,6 +5,7 @@ services:
       context: .
       dockerfile: ./d1.df
     image: frontend:v1.0
+    container_name: c1
     ports:
     - "8090:8090"
     environment:
@@ -18,9 +19,10 @@ services:
     build:
       context: .
       dockerfile: ./db.df
-    image: backend:v1.0
+    image: backend:v1.1
+    container_name: db1
     ports:
     - "5432:5432"
     environment:
-      - POSTGRES_DB=postgres
+      - POSTGRES_DB=empdb
       - POSTGRES_PASSWORD=1234
