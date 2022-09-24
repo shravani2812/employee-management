@@ -16,7 +16,7 @@ spec:
         app: project1
     spec:
       containers:
-      - image: vaikunths/project_pt:frontendv1.0
+      - image: ckshravani/project:frontendv1.0
         name: frontendkb
         ports:
         - containerPort: 8090
