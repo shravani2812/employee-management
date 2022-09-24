@@ -40,6 +40,8 @@ spec:
         env:
           - name: POSTGRES_DB
             value: 'empdb'
+          - name: POSTGRES_USER
+            value: 'postgres'  
           - name: POSTGRES_PASSWORD
             value: '1234'
 ...
