@@ -9,11 +9,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: project
+      app: project1
   template:
     metadata:
       labels:
-        app: project
+        app: project1
     spec:
       containers:
       - image: ckshravani/project:frontendv1.0
