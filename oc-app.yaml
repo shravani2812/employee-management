@@ -33,7 +33,7 @@ spec:
         app: project
     spec:
       containers:
-      - image: vaikunths/project_pt:backendv1.0
+      - image: ckshravani/project:backendv1.1
         name: backendkb
         ports:
         - containerPort: 5432
